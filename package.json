@@ -1,0 +1,24 @@
+{
+  "name": "agents-md-doctor",
+  "version": "0.1.0",
+  "description": "A dependency-free CLI that audits AGENTS.md instructions for maintainability risks.",
+  "type": "module",
+  "bin": {
+    "agents-md-doctor": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "lint": "node src/cli.js --strict AGENTS.md"
+  },
+  "keywords": [
+    "agents-md",
+    "codex",
+    "openai",
+    "lint",
+    "cli"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

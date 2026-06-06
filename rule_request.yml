@@ -1,0 +1,29 @@
+name: Rule request
+description: Propose a new AGENTS.md audit rule.
+title: "[Rule]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk
+      description: What maintainer risk should this rule catch?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example
+      description: Provide a minimal risky instruction snippet.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Proposed severity
+      options:
+        - warning
+        - error
+    validations:
+      required: true
